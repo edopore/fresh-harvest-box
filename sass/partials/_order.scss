@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     gap: 14px;
+    margin-bottom: 44px;
   }
   &__description {
     width: 335px;
@@ -35,6 +36,7 @@
   color: $black-base;
   gap: 20px;
   width: 335px;
+  margin-bottom: 44px;
   &__item {
     display: flex;
     align-items: center;
@@ -47,5 +49,46 @@
     text-align: start;
     width: 145px;
     flex-shrink: 0;
+  }
+}
+.fruit-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  &__card {
+    width: 335px;
+    text-align: start;
+    padding: 64px 20px 24px 20px;
+    border-radius: 20px;
+    &__name {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.2; /* 116.667% */
+      letter-spacing: -0.96px;
+    }
+    &__type {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.3; /* 128.571% */
+      letter-spacing: -0.28px;
+    }
+    &--strawberry {
+      background-color: $sy-bg;
+    }
+    &--banana {
+      background-color: $bn-bg;
+    }
+    &--watermelon {
+      background-color: $wm-bg;
+    }
+    &--lime {
+      background-color: $lm-bg;
+    }
+    &--apple {
+      background-color: $ap-bg;
+    }
+    &--peach {
+      background-color: $ph-bg;
+    }
   }
 }

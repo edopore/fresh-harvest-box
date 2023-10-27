@@ -44,7 +44,7 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="main">
       <section class="hero section">
         <div class="container">
           <ul class="fruit">
@@ -203,21 +203,95 @@
               </p>
             </li>
           </ul>
-          <ul class="organic__list fruit">
-            <li class="fruit__item">
-              <p class="item__name">Strawberry</p>
-              <p class="item__type">Plant</p>
+          <ul class="organic__list fruit-list">
+            <li class="fruit-list__card fruit-list__card--strawberry">
+              <p class="fruit-list__card__name">Strawberry</p>
+              <p class="fruit-list__card__type">Plant</p>
               <img
                 src="./images/strawberry-prod.png"
                 alt="strawberry"
                 width="295"
               />
-              <p class="lbl">100 UAH / kg.</p>
+              <p class="lbl-info lbl-info--price m-0">100 UAH / kg.</p>
             </li>
+            <li class="fruit-list__card fruit-list__card--banana">
+              <p class="fruit-list__card__name">Banana</p>
+              <p class="fruit-list__card__type">Plant</p>
+              <img
+                src="./images/banana-prod.png"
+                alt="strawberry"
+                width="295"
+              />
+              <p class="lbl-info lbl-info--price m-0">100 UAH / kg.</p>
+            </li>
+            <li class="fruit-list__card fruit-list__card--watermelon">
+              <p class="fruit-list__card__name">Watermelon</p>
+              <p class="fruit-list__card__type">Plant</p>
+              <img
+                src="./images/watermelon-prod.png"
+                alt="strawberry"
+                width="295"
+              />
+              <p class="lbl-info lbl-info--price m-0">100 UAH / kg.</p>
+            </li>
+            <li class="fruit-list__card fruit-list__card--lime">
+              <p class="fruit-list__card__name">Lime</p>
+              <p class="fruit-list__card__type">Plant</p>
+              <img src="./images/lime-prod.png" alt="strawberry" width="295" />
+              <p class="lbl-info lbl-info--price m-0">100 UAH / kg.</p>
+            </li>
+            <li class="fruit-list__card fruit-list__card--apple">
+              <p class="fruit-list__card__name">Apple</p>
+              <p class="fruit-list__card__type">Plant</p>
+              <img src="./images/apple-prod.png" alt="strawberry" width="295" />
+              <p class="lbl-info lbl-info--price m-0">100 UAH / kg.</p>
+            </li>
+            <li class="fruit-list__card fruit-list__card--peach">
+              <p class="fruit-list__card__name">Peach</p>
+              <p class="fruit-list__card__type">Plant</p>
+              <img src="./images/peach-prod.png" alt="strawberry" width="295" />
+              <p class="lbl-info lbl-info--price m-0">100 UAH / kg.</p>
+            </li>
+          </ul>
+          <button class="btn btn-order btn-order-gr" type="button">
+            <svg class="btn-order__svg" width="14" height="14">
+              <use href="./images/symbol-defs.svg#icon-arrow"></use>
+            </svg>
+            order
+          </button>
+        </div>
+      </section>
+      <section class="harvest section">
+        <div class="container">
+          <ul class="harvest__list">
+            <li>
+              <h2 class="hero__title harvest__title">
+                Fresh Harvest Box has got you covered
+              </h2>
+            </li>
+            <li class="harvest__image harvest__image--left"></li>
+            <li class="harvest__image harvest__image--right"></li>
           </ul>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <img src="./images/lady-banana.jpg" alt="girl-banana" width="335" />
+        <ul class="menu">
+          <li class="menu__link"><a href="#">How It Works</a></li>
+          <li class="menu__link"><a href="#">Fruits</a></li>
+          <li class="menu__link"><a href="#">Contacts</a></li>
+        </ul>
+        <ul class="nav-bar">
+          <li class="logo__item">
+            <svg width="16" height="16">
+              <use href="./images/symbol-defs.svg#icon-logo"></use>
+            </svg>
+            <p>fresh harvest box</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

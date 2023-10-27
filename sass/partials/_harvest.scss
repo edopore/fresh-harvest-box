@@ -1,0 +1,28 @@
+.harvest {
+  &__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  &__title {
+    position: absolute;
+    width: 290px;
+    top: -40px;
+    left: 0;
+    right: 0;
+  }
+  &__image {
+    width: 335px;
+    height: 476px;
+    border-radius: 20px;
+    background-image: url(../../images/gif.jpg);
+    &--right {
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: inline;
+      }
+    }
+  }
+}

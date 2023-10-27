@@ -70,10 +70,14 @@
       width: 335px;
       position: relative;
       margin-bottom: 64px;
-      border: 2px solid $white-base;
+      background: linear-gradient(
+        $white-base-o00,
+        $white-base-o04,
+        $white-base
+      );
       border-radius: 500px;
       img {
-        width: 311px;
+        width: 330px;
         border-radius: 500px;
       }
     }
