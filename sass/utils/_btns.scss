@@ -1,0 +1,46 @@
+.btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  &-order {
+    position: absolute;
+    border: 1px solid $white-base;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    top: 444px;
+    left: 130px;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+    transform: rotate(-14deg);
+    color: $red-base;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1; /* 100% */
+    letter-spacing: -0.8px;
+  }
+}
+.lbl {
+  &-info {
+    background-color: transparent;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid $white-base;
+    width: 132px;
+    border-radius: 1000px;
+    color: $white-base;
+    padding: 12px 18px;
+    &-step {
+      text-transform: capitalize;
+      width: 136px;
+      &--danger {
+        background-color: $red-base;
+      }
+      &--success {
+        background-color: $green-base;
+      }
+      &--warning {
+        background-color: $yellow-base;
+      }
+    }
+  }
+}

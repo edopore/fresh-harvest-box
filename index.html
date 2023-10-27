@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh Harvest Box</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./sass/main.css" />
+  </head>
+  <body>
+    <header class="header section--header">
+      <div class="container">
+        <nav class="nav-bar">
+          <ul class="nav-bar__menu menu">
+            <li class="menu__link"><a href="#">How It Works</a></li>
+            <li class="menu__link"><a href="#">Fruits</a></li>
+            <li class="menu__link"><a href="#">Contacts</a></li>
+          </ul>
+          <ul class="nav-bar__logo logo">
+            <li class="logo__item">
+              <svg width="16" height="16">
+                <use href="./images/symbol-defs.svg#icon-logo"></use>
+              </svg>
+              <p>fresh harvest box</p>
+            </li>
+          </ul>
+          <ul class="nav-bar__shop">
+            <li>
+              <svg width="28" height="28">
+                <use href="./images/symbol-defs.svg#icon-shop-bag"></use>
+              </svg>
+            </li>
+          </ul>
+          <ul class="nav-bar__mobile-menu">
+            <li>
+              <svg width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-menu-left"></use>
+              </svg>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero section">
+        <div class="container">
+          <ul class="fruit">
+            <li>
+              <div class="hero-container">
+                <h1 class="hero__title">
+                  fresh harvest box is your one-stop place for a delicious fruit
+                  basket
+                </h1>
+                <img
+                  class="fruit__item fruit__item--banana"
+                  src="./images/banana.webp"
+                  alt="banana"
+                  width="66"
+                />
+                <img
+                  class="fruit__item fruit__item--strawberry"
+                  src="./images/strawberry.webp"
+                  alt="strawberry"
+                  width="56"
+                />
+              </div>
+            </li>
+          </ul>
+
+          <ul class="image-order">
+            <li class="image-order image-order__item-lady">
+              <img
+                src="./images/lady-orange.jpg"
+                alt="orange-lady"
+                width="335"
+              />
+              <button class="btn btn-order" type="button">shop now</button>
+            </li>
+            <li class="image-order image-order__item-description">
+              <p>
+                Our expertly curated fruit baskets are made with the freshest,
+                highest quality fruits available. Whether you are looking for a
+                healthy snack or a gift for a loved one, Fresh Harvest Box has
+                got you covered.
+              </p>
+            </li>
+            <li
+              class="image-order image-order__item image-order__item--watermelons"
+            >
+              <p class="item__title">fruit</p>
+              <img
+                src="./images/watermelons.webp"
+                alt="watermelons"
+                width="200"
+              />
+              <p class="item__description">
+                Refreshing and juicy, watermelon is the perfect summer treat and
+                a great source of hydration
+              </p>
+            </li>
+            <li class="image-order image-order__item--tags">
+              <ul class="tag-list">
+                <li class="tag-list__item lbl-info m-0">#organic</li>
+                <li class="tag-list__item lbl-info m-0">#products</li>
+                <li class="tag-list__item lbl-info m-0">#basket</li>
+                <li class="tag-list__item lbl-info m-0">#fruits</li>
+              </ul>
+            </li>
+            <li
+              class="image-order image-order__item image-order__item--strawberries"
+            >
+              <p class="item__title">fruit</p>
+              <img
+                src="./images/strawberries-basket.webp"
+                alt="strawberries"
+                width="162"
+              />
+              <p class="item__description">
+                Sweet and juicy, strawberries are packed with vitamin C and
+                antioxidants, making them a delicious and healthy snack
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="order section">
+        <div class="container">
+          <ul class="order__header">
+            <li>
+              <h2 class="hero__title">
+                To order your fruit basket, simply follow these easy steps
+              </h2>
+            </li>
+            <li class="order__description">
+              <p>
+                Our baskets are assembled with care and delivered straight to
+                your doorstep, so you can enjoy the taste of fresh fruit without
+                ever leaving your home. Whether you're looking for a healthy
+                snack or a thoughtful gift, our fruit baskets are the perfect
+                choice.
+              </p>
+            </li>
+          </ul>
+          <ul class="step-list">
+            <li>
+              <ul class="step-list__item">
+                <li class="lbl-info lbl-info-step lbl-info-step--danger">
+                  <p>first step</p>
+                </li>
+                <li class="step-list__description">
+                  <p>
+                    Just choose the fruit you want to order by clicking on the
+                    checkboxes next to it.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="step-list__item">
+                <li class="lbl-info lbl-info-step lbl-info-step--success">
+                  <p>Second step</p>
+                </li>
+                <li class="step-list__description">
+                  <p>Click on the basket and fill out the form.</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="step-list__item">
+                <li class="lbl-info lbl-info-step lbl-info-step--warning">
+                  <p>Third step</p>
+                </li>
+                <li class="step-list__description">
+                  <p>
+                    Sit back and relax! Your fresh fruit basket will be
+                    delivered.
+                  </p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="order__gif"></div>
+        </div>
+      </section>
+      <section class="organic section">
+        <div class="container">
+          <ul class="order__header">
+            <li>
+              <h2 class="hero__title">
+                To order your fruit basket, simply follow these easy steps
+              </h2>
+            </li>
+            <li class="order__description">
+              <p>
+                Our organic fruits are hand-picked from local farms and
+                delivered straight to your doorstep, ensuring that you get the
+                freshest and most nutritious produce possible. We offer a wide
+                selection of organic fruits grown without the use of harmful
+                pesticides or chemicals.
+              </p>
+            </li>
+          </ul>
+          <ul class="organic__list fruit">
+            <li class="fruit__item">
+              <p class="item__name">Strawberry</p>
+              <p class="item__type">Plant</p>
+              <img
+                src="./images/strawberry-prod.png"
+                alt="strawberry"
+                width="295"
+              />
+              <p class="lbl">100 UAH / kg.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

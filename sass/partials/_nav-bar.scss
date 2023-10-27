@@ -1,0 +1,62 @@
+.header {
+  background-color: $white-base;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: $red-base;
+  text-transform: uppercase;
+  &__menu {
+    position: absolute;
+    left: 32px;
+    display: flex;
+    gap: 20px;
+    @media screen and (min-width: 375px) {
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  &__mobile-menu {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  &__shop {
+    position: absolute;
+    right: 32px;
+    @media screen and (min-width: 375px) {
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  @media screen and (min-width: 375px) {
+    padding: 13px 20px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 16px 32px;
+  }
+}
+.menu {
+  text-transform: capitalize;
+  &__link {
+    a {
+      text-decoration: none;
+      &:link,
+      &:visited,
+      &:active {
+        color: $red-base;
+      }
+    }
+  }
+}
+.logo {
+  &__item {
+    display: flex;
+    gap: 8px;
+  }
+}
