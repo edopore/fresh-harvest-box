@@ -21,16 +21,13 @@
   }
   &-container {
     position: relative;
-    width: 335px;
-    @media screen and (min-width: 768px) {
-      width: 768px;
-    }
-    @media screen and (min-width: 1280px) {
-      width: 1280px;
-    }
   }
 }
 .fruit {
+  position: absolute;
+  z-index: 1;
+  top: -40px;
+  left: 20px;
   &__item {
     position: absolute;
     &--banana {
@@ -61,6 +58,7 @@
 }
 
 .image-order {
+  margin-top: 50px;
   margin-bottom: 44px;
   &__item {
     width: 249px;

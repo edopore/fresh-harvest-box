@@ -170,6 +170,9 @@ p {
     display: flex;
   }
 }
+.nav-bar--footer {
+  margin: 20px 0px 24px 0px;
+}
 @media screen and (min-width: 375px) {
   .nav-bar {
     padding: 13px 20px;
@@ -222,19 +225,14 @@ p {
 }
 .hero-container {
   position: relative;
-  width: 335px;
-}
-@media screen and (min-width: 768px) {
-  .hero-container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .hero-container {
-    width: 1280px;
-  }
 }
 
+.fruit {
+  position: absolute;
+  z-index: 1;
+  top: -40px;
+  left: 20px;
+}
 .fruit__item {
   position: absolute;
 }
@@ -272,6 +270,7 @@ p {
 }
 
 .image-order {
+  margin-top: 50px;
   margin-bottom: 44px;
 }
 .image-order__item {
@@ -451,6 +450,11 @@ p {
   align-items: center;
   gap: 16px;
 }
+@media screen and (min-width: 768px) {
+  .harvest__list {
+    flex-direction: row;
+  }
+}
 .harvest__title {
   position: absolute;
   width: 290px;
@@ -462,19 +466,44 @@ p {
   width: 335px;
   height: 476px;
   border-radius: 20px;
-  background-image: url(../../images/gif.jpg);
+  background-image: url(../images/melon.jpg);
+}
+@media screen and (min-width: 768px) {
+  .harvest__image--left {
+    width: 344px;
+    height: 480px;
+    background-image: url(../images/melon@2.jpg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .harvest__image--left {
+    width: 792px;
+    height: 502px;
+    background-image: url(../images/melon@3.jpg);
+  }
 }
 .harvest__image--right {
   display: none;
+  background-image: url(../images/berries.jpg);
 }
 @media screen and (min-width: 768px) {
   .harvest__image--right {
     display: inline;
+    width: 344px;
+    height: 480px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .harvest__image--right {
+    width: 400px;
+    height: 502px;
+    background-image: url(../images/berries@2.jpg);
   }
 }
 
 .footer {
   background-color: rgb(255, 255, 255);
+  padding: 80px 0px;
 }
 .footer-menu {
   display: flex;
@@ -486,12 +515,18 @@ p {
   display: flex;
   justify-content: center;
   gap: 20px;
+  padding: 44px 0px;
 }
 .social__link svg {
   width: 40px;
   height: 40px;
 }
 
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
 .contact-info__phone {
   font-style: normal;
 }
