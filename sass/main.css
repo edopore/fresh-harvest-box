@@ -360,20 +360,20 @@ p {
   width: 335px;
   height: 476px;
   border-radius: 20px;
-  background-image: url(../../images/gif.jpg);
+  background-image: url(../images/gif.jpg);
 }
 @media screen and (min-width: 768px) {
   .order__gif {
     width: 704px;
     height: 476px;
-    background-image: url(../../images/gif@2.jpg);
+    background-image: url(../images/gif@2.jpg);
   }
 }
 @media screen and (min-width: 1280px) {
   .order__gif {
     width: 860px;
     height: 476px;
-    background-image: url(../../images/gif@3.jpg);
+    background-image: url(../images/gif@3.jpg);
   }
 }
 
