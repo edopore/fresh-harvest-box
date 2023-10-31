@@ -2,6 +2,7 @@
   &__list {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     gap: 16px;
@@ -15,6 +16,10 @@
     top: -40px;
     left: 0;
     right: 0;
+    @media screen and (min-width: 768px) {
+      width: 648px;
+      top: -73px;
+    }
   }
   &__image {
     width: 335px;
@@ -47,5 +52,34 @@
         background-image: url(../images/berries@2.jpg);
       }
     }
+  }
+  &__email {
+    color: $white-base;
+    background-color: transparent;
+    border: 1px solid $white-base;
+    border-radius: 100px;
+    padding: 15px 35px;
+    width: 292px;
+  }
+}
+.form {
+  position: relative;
+  &-email {
+    display: none;
+    @media screen and (min-width: 768px) {
+      padding-top: 80px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+      li {
+        p {
+          width: 492px;
+        }
+      }
+    }
+  }
+  &__fieldset {
+    border: 0;
   }
 }

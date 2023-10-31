@@ -189,9 +189,7 @@
         <div class="container">
           <ul class="order__header">
             <li>
-              <h2 class="hero__title">
-                To order your fruit basket, simply follow these easy steps
-              </h2>
+              <h2 class="hero__title">organic fruits</h2>
             </li>
             <li class="order__description">
               <p>
@@ -272,18 +270,48 @@
             <li class="harvest__image harvest__image--left"></li>
             <li class="harvest__image harvest__image--right"></li>
           </ul>
+          <ul class="form-email">
+            <li>
+              <p>
+                Our boxes are packed with delicious, nutritious fruits and
+                vegetables, perfect for anyone looking to eat healthier or
+                support local farmers. Order your box today and start enjoying
+                the best that nature has to offer!
+              </p>
+            </li>
+            <li>
+              <form class="form harvest__form">
+                <fieldset class="form__fieldset">
+                  <label for="email">
+                    <input
+                      class="harvest__email"
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Enter email..."
+                    />
+                  </label>
+                  <button class="btn--send-email">Send</button>
+                </fieldset>
+              </form>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <img src="./images/lady-banana.jpg" alt="girl-banana" width="335" />
-        <ul class="nav-bar nav-bar--footer">
-          <li class="logo__item">
-            <svg width="16" height="16">
-              <use href="./images/symbol-defs.svg#icon-logo"></use>
-            </svg>
-            <p>fresh harvest box</p>
+      <div class="container footer-container">
+        <ul class="footer-image-logo">
+          <li class="image-logo">
+            <img src="./images/lady-banana.jpg" alt="girl-banana" width="335" />
+            <ul class="nav-bar nav-bar--footer">
+              <li class="logo__item">
+                <svg width="16" height="16">
+                  <use href="./images/symbol-defs.svg#icon-logo"></use>
+                </svg>
+                <p>fresh harvest box</p>
+              </li>
+            </ul>
           </li>
         </ul>
         <ul class="footer-menu">
@@ -291,44 +319,46 @@
           <li class="menu__link m-0"><a href="#">Fruits</a></li>
           <li class="menu__link m-0"><a href="#">Contacts</a></li>
         </ul>
-        <ul class="social">
-          <li class="social__link m-0">
-            <svg>
-              <use
-                href="./images/symbol-defs.svg#icon-facebook"
-                width="40"
-              ></use>
-            </svg>
-          </li>
-          <li class="social__link m-0">
-            <svg>
-              <use
-                href="./images/symbol-defs.svg#icon-instagram"
-                width="40"
-              ></use>
-            </svg>
-          </li>
-          <li class="social__link m-0">
-            <svg>
-              <use
-                href="./images/symbol-defs.svg#icon-youtube"
-                width="40"
-              ></use>
-            </svg>
-          </li>
-        </ul>
-        <address>
-          <ul class="contact-info">
-            <li class="menu__link contact-info__phone">
-              <a href="tel:+380684439426">+380 (68) 443-94-26</a>
+        <div class="footer-items">
+          <ul class="social">
+            <li class="social__link m-0">
+              <svg>
+                <use
+                  href="./images/symbol-defs.svg#icon-facebook"
+                  width="40"
+                ></use>
+              </svg>
             </li>
-            <li>
-              <p class="contact-info__address">
-                1678 S. Pioneer Road Salt Lake City UT 84104
-              </p>
+            <li class="social__link m-0">
+              <svg>
+                <use
+                  href="./images/symbol-defs.svg#icon-instagram"
+                  width="40"
+                ></use>
+              </svg>
+            </li>
+            <li class="social__link m-0">
+              <svg>
+                <use
+                  href="./images/symbol-defs.svg#icon-youtube"
+                  width="40"
+                ></use>
+              </svg>
             </li>
           </ul>
-        </address>
+          <address>
+            <ul class="contact-info">
+              <li class="menu__link contact-info__phone">
+                <a href="tel:+380684439426">+380 (68) 443-94-26</a>
+              </li>
+              <li>
+                <p class="contact-info__address">
+                  1678 S. Pioneer Road Salt Lake City UT 84104
+                </p>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </footer>
   </body>
